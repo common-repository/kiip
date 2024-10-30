@@ -1,0 +1,60 @@
+/**
+ * All of the CSS for the public-facing functionality is
+ * included in this file.
+ */
+
+/* hacky way to do it but sidebar width is an issue in most themes - needs >350px 
+ * the height of the span is using display:block
+ * the width is set by percentages in the iframe so the height was an issue
+ */
+
+/* reset some stuff? */
+
+.kiip-moment-container-widget {	
+	display: block !important; /* a lot of the height\width issue depends on it*/
+	padding: 0 0 0 0 !important; /* reset */
+	margin: 0 0 0 0 !important; /* reset */
+	overflow: visible!important; /* no scroll bars */
+	height: 355px !important; /* how to set the height for iframe contents? */
+}
+
+.kiip-moment-container-shortcode {
+	display: block !important; /* a lot of the height\width issue depends on it*/
+	padding: 0 0 0 0 !important; /* reset */
+	margin: 0 0 0 0 !important; /* reset */
+	overflow: visible !important; /* no scroll bars */
+	height: 355px !important; /* how else to set the height for iframe contents? */
+}
+
+/* small screens */
+@media (max-width: 1124px) {
+.kiip-moment-container-widget,.kiip-moment-container-shortcode #kiip-moment-container {
+	  margin-left: -10% !important;
+}
+}
+
+/* mobile screens */
+@media (max-width: 500px) {
+.kiip-moment-container-widget,.kiip-moment-container-shortcode #kiip-moment-container {
+	  margin-left: -4% !important;
+}
+}
+
+.kiip-btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-out !important;
+}
+
+.kiip-btn:hover {
+  transition: all 0.5s ease-in !important;
+  text-decoration: none;
+}
